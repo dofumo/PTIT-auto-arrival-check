@@ -1,0 +1,12 @@
+// script dd
+const autoAttend = setInterval(() => {
+    // class track
+    const btn = document.querySelector('.attend-btn, .attend-fs-btn');
+    
+    if (btn) {
+        btn.click();
+        console.log('✅ Đã tự động click điểm danh lúc: ' + new Date().toLocaleTimeString());
+    }
+}, 2000);
+
+console.log('Script tự động điểm danh đã chạy! Cứ cắm máy để đó nhé.');
